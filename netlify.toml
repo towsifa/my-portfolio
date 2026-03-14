@@ -1,0 +1,7 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.123.0" # আপনার পিসিতে থাকা হুগো ভার্সন এখানে দিতে পারেন
+  HUGO_NODEJS_VERSION = "20"
