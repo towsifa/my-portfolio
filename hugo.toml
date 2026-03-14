@@ -1,0 +1,49 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+title = 'Towsifa Elahi'
+theme = 'congo'
+
+[params]
+    defaultAppearance = "dark"
+
+    [params.author]
+        name = "Towsifa Elahi"
+        image = "profile.jpg"
+        headline = "CSE Graduate | Software QA Engineer"
+        bio = "I love finding bugs and improving software quality."
+        links = [
+            { github = "https://github.com/towsifa" },
+            { linkedin = "https://linkedin.com/in/towsifaelahi/" }
+        ]
+
+    [params.homepage]
+    layout = "profile"
+    showAvatar = true
+
+    showTitle = true
+    showHeadline = true
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        name = "Projects"
+        url = "/projects/"
+        weight = 20
+    [[menu.main]]
+        name = "Education"
+        url = "/education/"
+        weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params.article]
+    showDate = false
+    showReadingTime = false
+    showWordCount = false
+    showEdit = false
